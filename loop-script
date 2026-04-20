@@ -1,0 +1,16 @@
+
+#!/bin/bash
+# Author: Abdallah Saleh Elgholmy
+# Date: 30-Nov-2025
+# Description: A simple loop script to demonstrate for loop     
+# Date Modified: 30-Nov-2025
+#
+# Clear the screen
+clear       
+
+echo For loop to print welcome message 5 times
+
+for i in 1 2 3 4 5
+do
+echo "Welcome $i times"
+done

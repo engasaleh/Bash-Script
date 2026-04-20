@@ -1,0 +1,18 @@
+### Date Created: 25-Feb-2026
+## Author: Abdallah Saleh
+## Description: Script to check the exit status code of a command
+## Date Modified: 25-Feb-2026
+## Journey in the DevOps Industry
+
+#! /bin/bash
+
+echo "Enter a command to execute:"
+ls /home/aselgholmy/BashCourseLearning/check
+
+if [ $? -eq 0 ]
+then 
+echo "The command executed successfully and file is exists."    
+else
+echo "The command failed to execute or file does not exist."
+fi
+
