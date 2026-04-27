@@ -1,0 +1,14 @@
+#!/bin/bash 
+# Author: Abdallah Saleh
+# Date: 20-04-2026
+# Description: A simple script to create multiple files and count the number of lines in each file.
+# Modified: 20-04-2026      
+
+mkdir multiple_countfiles
+cd multiple_countfiles
+
+for i in {1..10}
+do 
+touch file_.$i
+sleep 1 
+done 

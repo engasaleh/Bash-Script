@@ -1,0 +1,13 @@
+#!/bin/bash 
+# Author: Abdallah S    
+# Date: 
+# Description: This script creates files with specific names and extensions.
+# Modified: 
+
+    mkdir folder; cd folder
+
+for i in {1..10}
+do
+    touch abdallah.$i
+
+done

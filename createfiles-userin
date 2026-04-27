@@ -1,0 +1,19 @@
+#!/bin/bash 
+# Author: Abdallah Saleh
+# Date: 26-Apr-2026
+# Description: This script creates files with specific names and extensions based on user input.
+# Modified: 26-Apr-2026
+rm -rf folder
+mkdir folder; cd folder
+
+
+echo "Enter the number of files to create: "; read t 
+echo 
+
+echo "Enter the base name for the files: ";read r
+
+
+for i in $(seq 1 $t)
+do 
+    touch $r.$i
+done

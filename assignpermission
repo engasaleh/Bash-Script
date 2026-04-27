@@ -1,0 +1,20 @@
+#!/bin/bash
+# Auhtor:
+# Date: 26-Apr-2026
+# Description: This script assigns permissions to files based on user input.
+# Modified: 26-Apr-2026
+
+
+cd folder
+
+total=$(ls -l abdallah* | wc -l)
+
+echo It will take: $total seconds to assign permissions for all files.
+echo 
+
+for i in abdallah*
+do 
+    echo Enter the permissions to assign to $i
+    chmod a+w $i 
+    sleep 1 
+done 
