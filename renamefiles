@@ -1,0 +1,10 @@
+#!/bin/bash
+# Author: Abdallah Saleh
+# Date: 26-Apr-2026
+# Description: This script rename files.
+# Modified: 26-Apr-2026
+
+for filename in *.none
+do
+mv $filename ${filename%.none}.txt
+done

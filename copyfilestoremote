@@ -1,0 +1,12 @@
+#!/bin/bash
+# Author: Abdallah Saleh
+# Date: 28-Apr-2026
+# Description: This script copies files from a local directory to a remote server using scp.
+# Modified: 28-Apr-2026
+
+
+servers=(("redhat1" "redhat2" "redhat3" "redhat4"))
+for i in "${servers[@]}"
+do 
+    scp abdallah.txt* "$i:/tmp"
+done

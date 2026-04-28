@@ -1,0 +1,17 @@
+#!/bin/bash
+# Author: Abdallah Saleh
+# Date: 26-Apr-2026
+# Description: This script check for files.
+# Modified: 26-Apr-2026
+
+FILES="/etc/passwd 
+/etc/shadow /etc/group /etc/gshadow /etc/nsswitch.conf /etc/hosts /etc/resolv.conf /etc/fstab /etc/sshd_ssh_config /etc/fake"
+
+for file in $FILES
+do 
+if [ ! -e $file ]
+then
+echo $file does not exist
+echo 
+fi
+done
