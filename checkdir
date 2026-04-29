@@ -1,0 +1,23 @@
+#!/bin/bash 
+# Author: Abdallah Saleh
+# Date: 29-Apr-2026
+# Description: This script checks if a directory exists and creates it if it doesn't.
+# Modified: 29-Apr-2026
+
+
+
+cd /home
+
+for DIR in * 
+do 
+    CHK=$(grep -c "/home/$DIR" /etc/passwd)
+    if [ $CHK -ge 1 ]
+    then 
+    echo "$DIR is assigned to a user"
+    else 
+    echo "$DIR is NOT assigned to a user"
+    fi
+done
+
+
+
